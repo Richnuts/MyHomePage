@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+        <link href="aboutme.css" rel="stylesheet">
+        <title>Richnuts Homepage :D</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <ul>
+        <li><div class="icon">RC</div></li>
+        <li><a href="Home.html">Home</a></li>
+        <li><a href="CS50x.html">CS50x Review</a></li>
+        <li><a href="Hobby.html">Hobby</a></li>
+        <li style="float:right"><div class="icon">R</div></li>
+        <li style="float:right"><a class="active" href="About_Me.html">About Me</a></li>
+        </ul>
+    </head>
+
+    <body>
+        <h1> About Me </h1>
+        <div class="float-container clearfix">
+            <div class="float-child">
+                <p> <img class="img1" src="lmao.jpg" alt="yaoming face">
+                Hello my name is Excelrichap, people usually call me Richap im a bachelor of mechanical engineering
+                from sepuluh nopember institute of technology. I have lot of interest for computer since I was a kid
+                but I never tried to learn any of it, here I am now taking course at cs50x from Harvard university.
+                During this pandemic, its hard for me to find a job, so I try to spend my time with some positive
+                activity like studying. I have fell in love with computer science, its so fun and challenging for me,
+                I feel like I will try to master it. Learning a new subject its mindblowing for me,
+                it like telling me there is another path for me to walk and I never run away from a challenge XD
+                <br>
+                - Richap, 2021
+                </p>
+            </div>
+        </div>
+        <br>
+        <h1>This is the music that accompany me for study CS50x, Enjoy</h1>
+        <div class="box">
+            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
+        </div>
+        <br>
+    </div>
+        <h1>A cat randomizer for good luck :D</h1>
+        <div class="box">
+                <img id="thecat" src="cat-in-a-box.gif" alt="Cat Randomizer">
+        </div>
+        <br>
+        <div class="box">
+        <button onclick="random()" class="randomize">Give me a cat !</button>
+        <script>
+        function random() {
+                var cat = ["cat1.jpg", "cat2.jpg", "cat3.jpg", "cat4.jpg", "cat5.jpg"];
+                var result = cat[Math.floor(Math.random()*cat.length)];
+                document.getElementById("thecat").src = result;
+        }
+        </script>
+        </div>
+        <br>
+    </body>
+    <footer>
+        <div class="footer">© Excelrichap 2021</div>
+    </footer>
+</html>
